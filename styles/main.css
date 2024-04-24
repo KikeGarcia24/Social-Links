@@ -1,0 +1,156 @@
+/*Variables de color y fuentes*/
+/*Font Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*Mixins de media queries*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #F7F0F0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.socials {
+  width: 500px;
+  background-color: #484349;
+  border-radius: 30px;
+  height: 90vh;
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .socials {
+    width: 250px;
+  }
+}
+
+.info {
+  margin-bottom: 1rem;
+}
+.info .imgProfile {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .info .imgProfile {
+    margin-top: 4rem;
+  }
+}
+.info .imgProfile > img {
+  width: 10vw;
+  border-radius: 50%;
+  border: 1px solid #109648;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .info .imgProfile > img {
+    width: 20vw;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .info .imgProfile > img {
+    width: 25vw;
+  }
+}
+.info p {
+  color: #109648;
+}
+.info #name {
+  font-size: 2rem;
+  margin-top: 0.25rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .info #name {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .info #position {
+    font-size: 1.5rem;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links nav {
+  display: flex;
+  flex-direction: column;
+}
+.links nav a {
+  color: #109648;
+  font-weight: 400;
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #F7F0F0;
+  height: 60px;
+  width: 200px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .links nav a {
+    height: 80px;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .links nav a {
+    height: 50px;
+    margin-top: 1rem;
+  }
+}
+.links nav a:hover img {
+  transform: scale(1.2);
+  left: 44em;
+}
+.links nav a:hover p {
+  transform: scale(1.2);
+  left: 47em;
+  opacity: 1;
+}
+.links nav a img {
+  width: 30px;
+  align-items: center;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .links nav a img {
+    left: 20em;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .links nav a img {
+    left: 8em;
+  }
+}
+.links nav a p {
+  color: #484349;
+  position: absolute;
+  opacity: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .links nav a p {
+    left: 23.5em;
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .links nav a p {
+    left: 11em;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */

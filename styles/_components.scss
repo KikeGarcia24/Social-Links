@@ -1,0 +1,120 @@
+.socials{
+    width: 500px;
+    background-color: $bgboxColor;
+    border-radius: 30px;
+    height: 90vh;
+    @include celulares(){
+        width: 250px;
+    }
+}
+
+.info{
+    margin-bottom: 1rem;
+    .imgProfile{
+        margin-top: 2rem;
+        @include tablets(){
+            margin-top: 4rem;
+        }
+
+        >img{
+            width: 10vw;
+            border-radius: 50%;
+            border: 1px solid $textColor;
+            @include tablets(){
+                width: 20vw;
+            }
+            @include celulares(){
+                width: 25vw;
+            }
+        }
+    }
+    p{
+        color: $textColor;
+    }
+    #name{
+        font-size: 2rem;
+        margin-top: .25rem;
+        font-weight: 600;
+        @include tablets(){
+            font-size: 2.5rem;
+        }
+    }
+    #position{
+        @include tablets(){
+            font-size: 1.5rem;
+        }
+    }
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    nav{
+        display: flex;
+        flex-direction: column;
+
+        a{
+            color: $textColor;
+            font-weight: 400;
+            margin-top: .75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background-color: $bgColor;
+            height: 60px;
+            width: 200px;
+            border-radius: 20px;
+            transition: all .5s ease;
+            @include tablets(){
+                height: 80px;
+                margin-top: 1.5rem;
+            }
+            @include celulares(){
+                height: 50px;
+                margin-top: 1rem;
+            }
+
+            &:hover img{
+                transform: scale(1.2);
+                left: 44em;
+                @include hover();
+            }
+
+            &:hover p{
+                transform: scale(1.2);
+                left: 47em;
+                opacity: 1;
+                @include hover();
+            }
+
+
+            img{
+                width: 30px;
+                align-items: center;
+                position: absolute;
+                transition: all .5s ease;
+                @include tablets(){
+                    left: 20em;
+                }
+                @include celulares(){
+                    left: 8em;
+                }
+            }
+
+            p{
+                color: $btntextColor;
+                position: absolute;
+                opacity: 0;
+                @include tablets(){
+                    left: 23.5em;
+                    opacity: 1;
+                }
+                @include celulares(){
+                    left: 11em;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+} 
